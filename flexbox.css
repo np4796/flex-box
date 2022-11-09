@@ -1,0 +1,48 @@
+#container {
+    background-color: darkblue;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid darkblue;
+    display: flex;
+    /*to fit in the block*/
+    flex-direction: row;
+    /* direction of main axes */
+    justify-content: center;
+    /* decides the position of the flex in main axes */
+    flex-wrap: wrap;
+    /* main axes(coloum) size saripokapothe kotha column thesukuntundhi */
+    /* main axes(row) size saripokapothe kotha row thesukuntundhi */
+    align-items: flex-start;
+    /* position across the cross axes */
+    /* align-content: space-between; */
+    /* which controls the spacing between the div's */
+    /* flex-basis: ; */
+    
+   
+}
+h1{
+    text-align: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container div {
+    height: 200px;
+    width: 200px;
+    /* flex-basis: 400px; */
+    /* it sets the element initial size along main axes */
+}
+/* div:nth-last-of-type(3){ */
+    /* align-self: center; */
+    /* to control the position for an individual div */
+/* } */
+div:nth-of-type(3){
+    flex-grow: 2;
+    flex-shrink: 2;
+    /* flex shrinks helps us to shrink the element when there is no space for the elements */
+}
+div:nth-of-type(1){
+    flex-grow: 3;
+    /* flex grow covers the empty space in flex in the given proportion */
+}
